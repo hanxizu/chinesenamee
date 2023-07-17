@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+@keyframes tishik
+{
+	
+
+	0%{
+		transform: scale(0.6);
+		
+	}
+	10%{
+		transform: scale(0.6);		
+		transform:rotateY(45deg);
+	}
+	20%{
+		transform: scale(0.7)
+	}
+	50%{
+		transform: scale(1);
+	}
+	80%{
+		transform: scale(1);
+	}
+	
+		
+	
+}
+
+
+
+
+body{
+	 box-sizing: border-box;
+    height: 100vh;
+    background: url("http://yuanfen-1251352442.file.myqcloud.com/bg1.jpg?sign=uX/vQrXALzjpvkoqiNwaqO8B8plhPTEyNTEzNTI0NDImaz1BS0lERk9PRHJLQmpmUTBQZGd6TjBTbHRxZEZndzF2Z3BqejUmZT0xNTMzNzQ4OTU4JnQ9MTUzMTE1Njk1OCZyPTIxNDA3ODQ5ODMmZj0vYmcxLmpwZyZiPXl1YW5mZW4=") no-repeat center;
+    background-size: auto 100vh;
+    position:  relative;
+}
+#box{
+	width: 100%;
+	position: absolute;
+}
+
+/*头部*/
+.head{
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px #333333;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+/*头部限制左右宽度*/
+.head-dingwei{
+	max-width:1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+/*头部左侧*/
+.head-left{
+	width:200px;
+	height: 100%;
+	cursor: pointer;
+	display: inline-block;
+}
+/*头部左侧鼠标经过改变样式*/
+.head-left h1:hover{
+		color: rgba(240,44,47,0.8);
+	
+}
+/*头部左侧图片*/
+.head-left img{
+	width: 40px;
+	height: 40px;
+	vertical-align:bottom;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+/*头部左侧标题*/
+.head-left h1{
+	display: inline;
+	line-height: 60px;
+	font-size: 20px;
+	color: #212121;
+}
+/*头部右侧*/
+.head-right{
+	width:50px;
+	height: 100%;
+	cursor: pointer;
+	float: right;
+	display: inline-block;
+}
+/*头部右侧图片*/
+.head-right img{
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+}
+
+#content-xianzhi{
+	max-width:600px;
+	margin: 200px auto;
+	box-shadow: 2px 2px 10px rgba(0,0,0,.4);
+}
+.content-input{
+	padding-top: 10px;
+	width: 50%;
+	height: 80%;
+	margin: 0 auto;
+}
+.content-input input{
+	background:none;
+	width: 300px;
+	height: 40px;
+	display: block;
+	margin: 10px auto;
+	border-radius: 25px;
+	text-align: center;
+	border: 1px solid rgba(255,255,255,0.7);
+	font-size: 20px;
+	color: rgba(255,255,255,1.00);
+}
+.content-input input:focus{
+	border-color: #549df8;
+}
+.content-input input:last-child{
+	background-color: #2196F3;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.content-input input:last-child:hover{
+	background-color: #056CBD;
+}
+#content-xianzhi p{
+	font-size: 25px;
+	font-weight: bold;
+	color: rgba(208,208,208,1.00);
+	padding-top: 20px;
+}
+@media screen and (max-width: 600px){
+  /* 手机端CSS代码 */
+	#content-xianzhi{
+		width:100%;
+
+		margin: 80px auto;
+		box-shadow: 0 0 5px rgba(0,0,0,.1);
+		position: absolute;
+	}
+	.content-input{
+		padding-top: 10px;
+		width: 100%;
+		height: 80%;
+		margin: 0 auto;
+	}
+}
+ 
+@media screen and (min-width: 600px){
+  /* 电脑端CSS代码 */
+	
+	
+}
+
+
+
+/*提示框*/
+#zhezhao{
+	z-index: 0;
+	width: 100%;
+	height: 500px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#tishik{
+	position: absolute;
+	left: 650px;
+	top:400px;
+	width: 200px;
+	background-color: #f5f5f5;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+	border-radius: 5px;
+	animation: tishik 1s ease-in-out ;
+	animation-fill-mode: backwards;
+}
+.tsk-img{
+	width: 100%;
+	height: 80px;
+
+
+}
+.tsk-img img{
+	margin-top: 20px;
+	width: 50px;
+	height: 50px;
+
+}
+#tsk-p{
+	color: rgba(0,0,0,0.5);
+	margin: 0 auto;
+	font-size: 20px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+
+}
+#tishik input{
+	cursor: pointer;
+	width: 80%;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	background-color: #2196F3;
+	border: 1px solid rgba(0,150,245,1.00);
+	border-radius: 15px;
+}
+
